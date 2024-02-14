@@ -1,0 +1,147 @@
+/* poppin font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Inter font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background: cadetblue;
+  background: url(./assets/funny2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+.wrapper {
+  width: 80vmin;
+  padding: 50px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
+}
+span {
+  display: block;
+  text-align: center;
+  font-size: 100px;
+}
+p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 35px;
+  margin: 30px 0;
+  opacity: 0;
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/*  */
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ p{
+  text-shadow: 1px 1px 23px black;
+
+ }
+/*  */
+button {
+  height: ;
+  display: block;
+  background-image: linear-gradient(to right, #ea850a  1%, #ff5100  100%);
+
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  color: #171721;
+  font-weight: 600;
+  padding: 12px 25px;
+  margin: 0 auto;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.1s ease-in;
+  color: rgb(229, 221, 221);
+  text-shadow: 1px 1px 3px black;
+}
+button:hover {
+  background-image: linear-gradient(144deg, #ddff00, #2ddc21 50%, #ffee00);
+  /* border: 2px solid rgb(208, 255, 0); */
+  
+}
+button:active {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(0.96);
+}
+
+.card {
+  background-color: #4158d0;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  border-radius: 8px;
+  color: white;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 40px 30px;
+}
+
+.emoji {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+#emoji {
+  filter: grayscale(1);
+  transition-property: transfrom, filter;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+#emoji:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
